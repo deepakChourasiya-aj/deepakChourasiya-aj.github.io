@@ -6,7 +6,8 @@ box-sizing: border-box;
 }
 body{
     background-color: #080808;
-    color: #fff;
+    color: skyblue;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 .container{
     padding:10px 10%;
@@ -28,7 +29,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: skyblue;
     text-decoration: none;
     font-size: 18px;
     position: relative;
@@ -47,3 +48,56 @@ nav ul li a::after {
 nav ul li a :hover::after{
     width: 100%;
 }
+/* ---------------Home section-------------------- */
+#home{
+    display: flex;
+    margin-top: 80px;
+    margin:auto;
+    width: 90%;
+    justify-content: space-between;
+    margin-bottom: 90px;
+
+}
+#home>div{
+    width: 40%;
+}
+#intro_section{
+    width: 40%;
+}
+
+#resume_btn1>a:nth-child(1)>button{
+padding: 6px;
+padding-right: 13px;
+padding-left: 13px;
+font-size: 117%;
+background-color: cornflowerblue;
+border-radius: 6px;
+
+}
+#resume_btn1>a:nth-child(2)>button{
+    padding: 6px;
+    font-size: 117%;
+    padding-right: 13px;
+    padding-left: 13px;
+    background-color: cornflowerblue;
+    border-radius: 6px;
+/* font-size: large; */
+}
+
+#intro_section>p{
+   font-size: 200%;
+}
+#user-detail-name{
+    font-size: 250%;
+    margin-top: 20px;
+    color: skyblue;
+}
+#user-detail-intro{
+    font-size: 150%;
+    margin-top: 20px;
+}
+#resume_btn1{
+ margin-top: 20px;
+}
+
+/* ------------------About---------------------------------- */
