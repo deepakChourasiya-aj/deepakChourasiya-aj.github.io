@@ -6,165 +6,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HOME PAGE</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Roboto+Condensed&family=Roboto:wght@100&display=swap" rel="stylesheet">
   </head>
   <body>
-
     <div id="headers">
       <div class="container">
              <nav id="nav-menu" >
-              <img src="Deepak.png" alt="" class="logo">
+              <img src="" alt="Deepak" class="logo">
               <ul>
                 <li><a class="nav-link home" href="#home">HOME</a></li>
                 <li><a class="nav-link about" href="#about">ABOUT</a></li>
                 <li><a class="nav-link skills" href="#skills">SKILLS</a></li>
                 <li><a class="nav-link projects" href="#projects">PROJECTS</a></li>
                 <li><a class="nav-link contact" href="#contact">CONTACT</a></li>
-              <li><a class="nav-link resume" href="#"></a></li>
+              <li><a class="nav-link resume" href="deepak_resume.pdf" download><button>RESUME</button></a></li>
               </ul>
              </nav>
       </div>
    </div>
-
-   <!-- ----------------sum content from index.html---------- -->
-   <!-- <section id="about" class="about section">ABOUT</section>
-   <section id="skills">Skills</section>
-   <section id="projects">Projects</section>
-   <section id="contact">
-     <h1>Contact</h1>
-     <a id="contact-github" href="https://github.com/deepakChourasiya-aj">GitHub</a>
-     <a id="contact-linkedin" href="https://www.linkedin.com/in/deepak-chourasiya-3a4a9220a">LinkedIn</a>
-     <a id="contact-phone" href="#">Mobile</a>
-     <a id="contact-email" href="deepak1812002@gmail.com">Email</a>
-   </section> -->
-    <!-------------------- HOME ---------------------->
-    <section id="home" style="margin-top: 75px;">
-      <div id="intro_section">
-        <p style="color: #d3e995">Welcome to heaven I'm</p>
-        <h1 id="user-detail-name" >Deepak</h1>
-        <p id="user-detail-intro"> An aspiring software developer with 1200hr of coding experience passionate about technology </p>
-        <div id="resume_btn1">
-          <a href="https://drive.google.com/file/d/1ZvaB_-bSCtWWAGExGhZ51e9v1n0b9ixG/view?usp=sharing"><button>Resume</button></a>
-          <a href=""><button>
-            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" aria-hidden="true" focusable="false" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M416 199.5h-91.4V64H187.4v135.5H96l160 158.1 160-158.1zM96 402.8V448h320v-45.2H96z"></path></svg>
-          </button></a>
+   <!-- ---------------------------------------------Home Page--------------------------------------->
+      <section id="home" style="margin-top: 75px;">
+        <div id="intro_section">
+          <p style="color: #d3e995">Welcome to heaven I'm</p>
+          <h1 id="user-detail-name" >Deepak</h1>
+          <p id="user-detail-intro"> An aspiring software developer with 1200hr of coding experience passionate about technology </p>
+          <div id="resume_btn1">
+            <a href="https://drive.google.com/file/d/1ZvaB_-bSCtWWAGExGhZ51e9v1n0b9ixG/view?usp=sharing" target="_blank"><button>Resume</button></a>
+            <a href="deepak_resume.pdf" download><button>
+              <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" aria-hidden="true" focusable="false" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M416 199.5h-91.4V64H187.4v135.5H96l160 158.1 160-158.1zM96 402.8V448h320v-45.2H96z"></path></svg>
+            </button></a>
+          </div>
         </div>
-      </div>
-      <div class="logotheme">
-         <img id="logo_img_theme" class="home-img" src="Deepak.png" alt="">
-      </div>
-    </section>
-    <!-------------------- ABOUT ---------------------->
-    <section id="about" class="about section">
-      <title>About</title>
-      <h1 id="user-detail-name">Deepak</h1>
-      <img src="Deepak.png" class="home-img" alt="">
-      <h2 id="user-detail-intro">
-        I am a Developer who know HTML, CSS, JAVASCRIPT, NODEJS, EXPRESS.JS,
-        MONGODB, POSTMAN
-      </h2>
-    </section>
-    <!-------------------- SKILLS ---------------------->
-    <section id="skills">
-      <div class="skills-card">
-        <img
-          class="skills-card-img"
-          src="./image/nodejs_logo.png"
-          alt="nodejs.png"
-        />
-        <h5 class="skills-card-name">Node JS</h5>
-      </div>
-      <div class="skills-card">
-        <img
-          class="skills-card-img"
-          src="./image/expressjs_logo.png"
-          alt="express.png"
-        />
-        <h5 class="skills-card-name">Express JS</h5>
-      </div>
-      <div class="skills-card">
-        <img
-          class="skills-card-img"
-          src="./image/mongoDB_logo.png"
-          alt="mongodb.png"
-        />
-        <h5 class="skills-card-name">Mongo DB</h5>
-      </div>
-    </section>
-    <!-------------------- PROJECTS ---------------------->
-    <section id="projects">
-      <!-- 1 -->
-      <div class="project-card">
-        <img src="./image/homedecor.png" alt="">
-        <title class="project-title">HomeDecor</title>
-        <p class="project-description">Description</p>
-        <p class="project-tech-stack">Tech Stack</p>
+        <div class="logotheme">
+           <img id="logo_img_theme" class="home-img" src="https://media4.giphy.com/media/u2pmTWUi0MXjyrMaVj/200w.gif?cid=6c09b952ozzrg9j3jbbriye1yj2rm2s1qz0usyfiuj04f89d&rid=200w.gif&ct=g" alt="">
+        </div>
+      </section>
+<!----------------------------------------About Page------------------------------------->
+<br style="color
+:white">
+
+<section id="about" class="about section">
+  <h1 id="aboutheading">About Me and Experience</h1>
+  <div class="about_buttons" >
+    <button id="intro_button" >About</button>
+    <button id="experience_button" >Experience</button>
+  </div>
+  <div class="about_container">
+    <div class="about_section">
+      <img width="70%" src="deepakimg.jpg" alt="">
+    </div>
+    <div class="about_section">
+      <h1 id="user-detail-name"></h1>
+      <p id="user-detail-intro">
+        An Aspiring backend developer with 1200
+        hours of practical coding experience, strongly
+        passionate about new technologies, and a
+        collaborative team player proficient in building
+        efficient software solutions using technical
+        skills HTML,CSS,Javascript,Node.js,Express.js,
+        MongoDB, looking for an opportunity as a
+        software developer.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- project section is here--------------------- -->
+<section id="projects">
+  <!-- 1 -->
+   <div class="project_container">
+         
+    <div class="project-card">
+      <img src="./image/homedecor.png" alt="">
+      <title class="project-title">HomeDecor</title>
+      <p class="project-description">Description</p>
+      <p class="project-tech-stack">Tech Stack</p>
+       <div id="deployed_container">
         <a class="project-github-link" href="https://github.com/deepakChourasiya-aj/spry-ear-9433">GitHub</a>
         <a class="project-deployed-link"href="https://app.netlify.com/sites/willowy-gaufre-978d06/overview">Netlify</a>
-      </div>
-      <!-- 2 -->
-      <div class="project-card">
-        <img src="./image/mytv.png alt=">
-        <title class="project-title">MyTv</title>
-        <p class="project-description">Description</p>
-        <p class="project-tech-stack">Tech Stack</p>
-        <a class="project-github-link" href="https://github.com/deepakChourasiya-aj/spry-ear-9433">GitHub</a>
-        <a class="project-deployed-link"href="https://app.netlify.com/sites/willowy-gaufre-978d06/overview">Netlify</a>
-      </div>
-      <!-- 3 -->
-      <div class="project-card">
-        <img src="./image/yellowcart.png" alt="">
-        <title class="project-title">YellowCart</title>
-        <p class="project-description">Description</p>
-        <p class="project-tech-stack">Tech Stack</p>
-        <a class="project-github-link" href="https://github.com/deepakChourasiya-aj/spry-ear-9433">GitHub</a>
-        <a class="project-deployed-link"href="https://app.netlify.com/sites/willowy-gaufre-978d06/overview">Netlify</a>
-      </div>
-      <!-- 4 -->
-      <div class="project-card">
-        <img src="./image/timer.png" alt="">
-        <title class="project-title">Timer</title>
-        <p class="project-description">Description</p>
-        <p class="project-tech-stack">Tech Stack</p>
-        <a class="project-github-link" href="https://github.com/deepakChourasiya-aj/spry-ear-9433">GitHub</a>
-        <a class="project-deployed-link"href="https://app.netlify.com/sites/willowy-gaufre-978d06/overview">Netlify</a>
-      </div>
-    </section>
-    <!-------------------- CONTACTS ---------------------->
-    <section id="contact">
-      <h1>Contact</h1>
-      <a id="contact-github" href="https://github.com/deepakChourasiya-aj">GitHub</a>
-      <a id="contact-linkedin" href="https://www.linkedin.com/in/deepak-chourasiya-3a4a9220a/"
-        >LinkedIn</a
-      >
-      <a id="contact-phone" href="#">Mobile</a>
-      <a id="contact-email" href="deepak1812002@gmail.com">Email</a>
-    </section>
-    <!-------------------- RESUME ---------------------->
-    <section id="resume"></section>
-    <!-------------------- GitHUB ---------------------->
-    <section class="react-activity-calendar">
-      <h1>GitHub React-Activity-Calendar</h1>
-      <img
-        id="github-streak-stats"
-        src="https://github-readme-streak-stats.herokuapp.com?user=deepakChourasiya-aj&theme=radical&hide_border=true&border_radius=6.5&date_format=M%20j%5B%2C%20Y%5D"
-        alt="streakstat"
-      />
-      <img
-        id="github-top-langs"
-        src="https://github-readme-stats.vercel.app/api/top-langs/?username=deepakChourasiya-aj&theme=outrun"
-        alt="top_languages"
-      />
-      <img
-        id="github-stats-card"
-        src="https://github-readme-stats.vercel.app/api?username=deepakChourasiya-aj&count_private=true"
-        alt="stat-card"
-      />
-      <img
-      id="github-stats-card"
-      src="https://github-readme-stats.vercel.app/api/wakatime?username=deepakChourasiya-aj"
-      alt="stat-card"
-    />
-    [![willianrod's wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=willianrod)](https://github.com/anuraghazra/github-readme-stats)
-    </section>
-  </body>
+       </div>
+    </div>
+
+   </div>
+</section>
+</body>
 </html>
+<script></script>
+
+
+</div>
