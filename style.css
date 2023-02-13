@@ -13,7 +13,7 @@ body {
   /* position: -webkit-sticky; */
   position: sticky;
   background-attachment: fixed;
-  background-color: red;
+  background-color: #3f51b5;
   top: 0;
 }
 .container {
@@ -64,7 +64,7 @@ nav ul li a :hover::after {
   display: flex;
   margin-top: 80px;
   margin: auto;
-  width: 90%;
+  width: 80%;
   justify-content: space-between;
   margin-bottom: 90px;
 }
@@ -102,7 +102,7 @@ nav ul li a :hover::after {
   color: skyblue;
 }
 #user-detail-intro {
-  font-size: 150%;
+  font-size: 120%;
   margin-top: 20px;
 }
 #resume_btn1 {
@@ -116,7 +116,7 @@ nav ul li a :hover::after {
   font-size: 230%;
 }
 #about {
-  width: 90%;
+  width: 80%;
   margin: auto;
   padding-top: 5rem;
 }
@@ -149,4 +149,143 @@ nav ul li a :hover::after {
 }
 .about_section img{
     border-radius: 15px;
+}
+
+.about_ex_projects{
+  /* border:2px solid yellow; */
+  display: flex;
+  margin-top: 15vh;
+  justify-content: space-around;
+}
+.about_ex_projects>div{
+  /* border:2px solid rgb(96, 86, 156); */
+  /* display: flex; */
+  text-align: center;
+  padding: 10px;
+}
+.about_ex_projects>div:nth-child(1){
+  /* border:2px solid rgb(96, 86, 156); */
+  width: 50%;
+  /* display: flex; */
+}
+.about_ex_projects>div:nth-child(2){
+  /* border:2px solid rgb(96, 86, 156); */
+  /* display: flex; */
+  width: 50%;
+}
+
+/* Project section...... */
+.projectsection{
+  margin-top: 15vh;
+}
+.project_container{
+  display: grid;
+  width: 80%;
+  padding-top: 10vh;
+  margin: auto;
+  justify-content: space-evenly;
+  grid-template-columns:repeat(2,1fr) ;
+  gap: 40px; 
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.project_container>div{
+  background-color: #3f51b5;
+  border-radius: 20px;
+  padding: 15px;
+  color: white;
+}
+#project_img{
+ width: 100%;
+ border-radius: 10px;
+}
+.project-title{
+  text-align: center;
+}
+
+#project_descriptions{
+  padding-left: 10px;
+}
+
+.project-github-link>button{
+  text-align: center;
+  align-items: center;
+}
+#deployed_container{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5vh;
+}
+#deployed_container>a{
+  display: flex;
+}
+.project-github-link{
+  margin-left: 5%;
+}
+.project-deployed-link{
+  font-size: larger;
+  margin-right: 6%;  
+  text-decoration: none;
+}
+.project-deployed-link>button{
+border-radius: 15px;
+background-color: black;
+color: white;
+padding: 3px;
+padding-left: 10px;
+padding-right: 10px;
+border: 3px solid;
+}
+.project-tech-stack{
+
+}
+#project_content{
+  margin: 10px;
+}
+
+.fa {
+  color: white
+  }
+/* skills section.... */
+  #skills_container{
+    width: 80%;
+    margin: auto;
+    margin-top: 20vh;
+    display: grid;
+    text-align: center;
+    justify-content: space-evenly;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+  }
+  .skills-card>img{
+    width: 60%;
+  }
+  #skills_i_have{
+    font-size: 230%; 
+    text-align: center;
+  }
+  #skills{
+    margin-top: 20vh;
+  }
+
+  /* github calenders... */
+
+
+  #github_activity_calender{
+    width: 80%;
+    margin: auto;
+  }
+  .react-activity-calendar{
+    text-align: center;
+    margin-top: 20vh;
+    margin-bottom: 20vh;
+  }
+
+  #githtext{
+    font-size: 230%; 
+    text-align: center;
+    margin-bottom: 20vh;
+  }
+
+#react-activity-calendar{
+  font-size: x-large;
 }
