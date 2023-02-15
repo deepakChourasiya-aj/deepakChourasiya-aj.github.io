@@ -290,6 +290,12 @@ border: 3px solid;
   font-size: x-large;
 }
 
+#githubstats{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+
+
 
 /* contact  */
 #contact{
@@ -298,6 +304,7 @@ border: 3px solid;
 }
 .row{
 display: flex;
+justify-content: space-evenly;
 }
 .contact-left{
   flex-basis: 35%;
@@ -311,15 +318,17 @@ display: flex;
 
 }
 .contact-left p i{  
-  color: #ff004f;
+  color: #00bcd4;
   margin-top: 15px;
   font-size: 25px;
+  margin-right: 10px;
+  align-items: center;
 }
 
 .social-icons {
   margin-top: 30px;
 }
-.social-icons {
+.social-icons a{
   text-decoration: none;
   font-size: 30px;
   margin-right: 15px;
@@ -327,8 +336,55 @@ display: flex;
   display: inline-block;
   transition: transform 0.5s;
 }
+.social-icons a:hover{
+  color: #ffc107;
+  transition: transformY(-5px);
+}
 
 .btn.btn2{
    display: inline-block;
-   background-color: red;
+   background-color: #00bcd4;;
+   border: 5px solid transparent;
+   text-decoration: none;
+   border-radius: 10px;
+   margin-top: 15px;
+}
+.contact-right form{
+  width: 100%;
+}
+form input,form textarea{
+  width: 100%;
+  border: 0;
+  outline: 15px;
+  background-color: #262622;
+  padding: 15px;
+  margin: 15px 0;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 6px;
+}
+
+form .btn2{
+  padding: 9px 39px;
+  font-size: 18px;
+  margin-top: 20px;
+  cursor: pointer;
+  border-radius: 11px;
+  background-color: gold;
+}
+
+#msg{
+  color: rgb(235, 220, 8);
+  margin-top: -40px;
+  display: block;
+}
+
+#contact{
+  margin-bottom: 30vh;
+}
+
+#contact_text{
+  font-size: 230%;
+  text-align: center;
+  margin-bottom: 15vh;
 }

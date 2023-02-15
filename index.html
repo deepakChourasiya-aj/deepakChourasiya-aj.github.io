@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- icons -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <!-- githupb link -->
     <link
     rel="stylesheet"
@@ -107,7 +109,7 @@
          </div>
 
          <div id="deployed_container">
-          <a class="project-github-link" href="https://github.com/deepakChourasiya-aj/spry-ear-9433"><i class="fa fa-github fa-3x"></i>
+          <a class="project-github-link" href="https://github.com/deepakChourasiya-aj/spry-ear-9433"><i class="uil uil-github"></i></i>
           </a>
           <a class="project-deployed-link" href="https://app.netlify.com/sites/willowy-gaufre-978d06/overview"><button>Deployed</button></a>
          </div>
@@ -251,6 +253,18 @@
     <div id="react-activity-calendar" >
     </div>
 
+    <div id="githubstats">
+      <div>
+        <img
+        id="github-stats-card"
+        src="https://github-readme-stats.vercel.app/api?username=deepakChourasiya-aj&show_icons=true&theme=merko"
+        alt="top_languages"
+      />
+      </div>
+      <div>
+        <img src="https://github-readme-streak-stats.herokuapp.com?user=deepakChourasiya-aj&theme=merko" alt="">
+      </div>
+    </div>
     <div>
       <div>
         <img
@@ -259,22 +273,15 @@
         alt="top_languages"
       />
       </div>
-      <div>
-        <img
-        id="github-stats-card"
-        src="https://github-readme-stats.vercel.app/api?username=deepakChourasiya-aj&show_icons=true&theme=merko"
-        alt="top_languages"
-      />
-      </div>
     </div>
   </div>
   
-[![willianrod's wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=deepakChourasiya-aj)](https://github.com/anuraghazra/github-readme-stats)
+<!-- [![willianrod's wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=deepakChourasiya-aj)](https://github.com/anuraghazra/github-readme-stats) -->
 </section>
 
 
     <!-------------------- CONTACTS ---------------------->
-    <section id="contact">
+    <!-- <section id="contact">
       <h1>Contact</h1>
       <a id="contact-github" href="https://github.com/deepakChourasiya-aj">GitHub</a>
       <a id="contact-linkedin" href="https://www.linkedin.com/in/deepak-chourasiya-3a4a9220a/"
@@ -282,46 +289,39 @@
       >
       <a id="contact-phone" href="#">Mobile</a>
       <a id="contact-email" href="deepak1812002@gmail.com">Email</a>
-    </section>
+    </section> -->
 
 
-    <!--constact gbuild by me..  -->
+    <!--------------------------CONTACTS..------------------------------------  -->
 <section id="contact">
+  <h1 id="contact_text" style="text-align: center;">Connect with me anytime</h1>
    <div class="conatainer">
       <div class="row">
         <div  class="contact-left">
           <h1 class="sub-title">Contact</h1>
-          <p id="contact-email" >|email -icon| deepak1812002@gmail.com</p>
-          <p id="contact-phone">|phone icon|7999764766</p>
+          <p id="contact-email" ><i class="uil uil-envelope-alt"></i>deepak1812002@gmail.com</p>
+          <p id="contact-phone"><i class="uil uil-mobile-android-alt"></i>7999764766</p>
           <div class="social-icons">
-            <a href=""><i style="color:white" class="fa-brands fa-linkedin-in"></i>LinkedIn</a>
-            <a href=""><i style="color:white" class="fa-brands fa-linkedin-in"></i>github</a>
-            <a href=""><i style="color:white" class="fa-brands fa-linkedin-in"></i></a>
+            <a  id="contact-github" href="https://github.com/deepakChourasiya-aj" ><i class="uil uil-linkedin"></i></a>
+            <a id="contact-linkedin" href="https://www.linkedin.com/in/deepak-chourasiya-3a4a9220a/" ><i class="uil uil-github"></i></a>
           </div>
-          <a href="" class="btn btn2">Download CV</a>
+          <a href="deepak_resume.pdf" class="btn btn2" download>Download CV</a>
         </div>
 
         <div class="contact-right">
-          <form action="">
+          <form name="submit-to-google-sheet" action="">
             <input type="text" name="Name" placeholder="Your Name">
-            <input type="text" name="gmail" placeholder="Your Email">
-            <input type="text" name="Name" placeholder="Your Name">
-            <button type="submit">Submit</button>
+            <input type="text" name="Email" placeholder="Your Email">
+            <textarea name="Text" id="" cols="30" rows="10"></textarea>
+            <button type="submit" class="bt
+             btn2">Submit</button>
           </form>
+          <span id="msg">Hey.</span>
         </div>
       </div>
 </div>
 
 </section>
-
-
-
-
-
-
-    <!--constact gbuild by me..  -->
-
-
 
     <!-------------------- RESUME ---------------------->
     <section id="resume"></section>
@@ -332,6 +332,26 @@
 <script src="index.js"></script>
 <script
   src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
+</script>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbxZkJXt7f7-KOFBpc-ZiNTWP8P4ADGfO0kv82HlDKRM099MrdBSf8rrVgjS3umS6dU5/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message has been sent successfully Thank you for contacting me.."
+        setTimeout(function(){
+          msg.innerHTML = ""
+        },5000)
+        form.reset();
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
 </script>
 
 <script>
