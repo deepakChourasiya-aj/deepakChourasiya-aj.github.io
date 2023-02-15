@@ -20,6 +20,7 @@ body {
   padding: 10px 10%;
 }
 nav {
+  color: white;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -59,7 +60,7 @@ nav ul li a :hover::after {
   background-color: #ffc107;
 }
 
-.nav-link>button{
+.nav-link > button {
   font-size: initial;
   border-radius: 5px;
   padding: 3px 15px 3px 15px;
@@ -154,179 +155,187 @@ nav ul li a :hover::after {
   padding: 5px 10px 5px 10px;
   border-radius: 5px;
 }
-.about_section img{
-    border-radius: 15px;
+.about_section img {
+  border-radius: 15px;
 }
 
-.about_ex_projects{
+.about_ex_projects {
   /* border:2px solid yellow; */
   display: flex;
-  margin-top: 15vh;
+  margin-top: 5vh;
   justify-content: space-around;
 }
-.about_ex_projects>div{
+.about_ex_projects > div {
   /* border:2px solid rgb(96, 86, 156); */
   /* display: flex; */
   text-align: center;
   padding: 10px;
 }
-.about_ex_projects>div:nth-child(1){
+.about_ex_projects > div:nth-child(1) {
   /* border:2px solid rgb(96, 86, 156); */
   width: 50%;
   /* display: flex; */
 }
-.about_ex_projects>div:nth-child(2){
+.about_ex_projects > div:nth-child(2) {
   /* border:2px solid rgb(96, 86, 156); */
   /* display: flex; */
   width: 50%;
+}
+/* #projects>svg{
+  width: 200%;
+} */
+
+.about_ex_projects > div > i {
+  font-size: 40px;
 }
 
 /* Project section...... */
-.projectsection{
+.projectsection {
   margin-top: 15vh;
 }
-.project_container{
+.project_container {
   display: grid;
   width: 80%;
   padding-top: 10vh;
   margin: auto;
   justify-content: space-evenly;
-  grid-template-columns:repeat(2,1fr) ;
-  gap: 40px; 
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
-.project_container>div{
+.project_container > div {
   background-color: #3f51b5;
   border-radius: 20px;
   padding: 15px;
   color: white;
 }
-#project_img{
- width: 100%;
- border-radius: 10px;
+#project_img {
+  width: 100%;
+  border-radius: 10px;
 }
-.project-title{
+.project-title {
   text-align: center;
 }
 
-#project_descriptions{
+#project_descriptions {
   padding-left: 10px;
 }
 
-.project-github-link>button{
+.project-github-link > button {
   text-align: center;
   align-items: center;
 }
-#deployed_container{
+#deployed_container {
   display: flex;
+  margin: auto;
+  text-align: center;
   justify-content: space-between;
   margin-top: 5vh;
 }
-#deployed_container>a{
-  display: flex;
+#deployed_container > a {
+  /* display: flex; */
 }
-.project-github-link{
+.project-github-link {
   margin-left: 5%;
 }
-.project-deployed-link{
+.project-deployed-link {
   font-size: larger;
-  margin-right: 6%;  
+  margin-right: 6%;
   text-decoration: none;
 }
-.project-deployed-link>button{
-border-radius: 15px;
-background-color: black;
-color: white;
-padding: 3px;
-padding-left: 10px;
-padding-right: 10px;
-border: 3px solid;
+.project-deployed-link > button {
+  border-radius: 15px;
+  background-color: black;
+  color: white;
+  padding: 3px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 3px solid;
 }
-.project-tech-stack{
-
+.project-tech-stack {
 }
-#project_content{
+#project_content {
   margin: 10px;
 }
 
 .fa {
-  color: white
-  }
+  color: white;
+}
 /* skills section.... */
-  #skills_container{
-    width: 80%;
-    margin: auto;
-    margin-top: 20vh;
-    display: grid;
-    text-align: center;
-    justify-content: space-evenly;
-    grid-template-columns: repeat(3,1fr);
-    gap: 20px;
-  }
-  .skills-card>img{
-    width: 60%;
-  }
-  #skills_i_have{
-    font-size: 230%; 
-    text-align: center;
-  }
-  #skills{
-    margin-top: 20vh;
-  }
-
-  /* github calenders... */
-
-
-  #github_activity_calender{
-    width: 80%;
-    margin: auto;
-  }
-  .react-activity-calendar{
-    text-align: center;
-    margin-top: 20vh;
-    margin-bottom: 20vh;
-  }
-
-  #githtext{
-    font-size: 230%; 
-    text-align: center;
-    margin-bottom: 20vh;
-  }
-
-#react-activity-calendar{
-  font-size: x-large;
-}
-
-#githubstats{
+#skills_container {
+  width: 80%;
+  margin: auto;
+  margin-top: 20vh;
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  text-align: center;
+  justify-content: space-evenly;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+.skills-card > img {
+  width: 60%;
+}
+#skills_i_have {
+  font-size: 230%;
+  text-align: center;
+}
+#skills {
+  margin-top: 20vh;
 }
 
-#githubstats>div:nth-child(1):img svg{
-  font-size: 300px
-}
+/* github calenders... */
 
-/* contact  */
-#contact{
+#github_activity_calender {
   width: 80%;
   margin: auto;
 }
-.row{
-display: flex;
-justify-content: space-evenly;
+.react-activity-calendar {
+  text-align: center;
+  margin-top: 20vh;
+  margin-bottom: 20vh;
 }
-.contact-left{
+
+#githtext {
+  font-size: 230%;
+  text-align: center;
+  margin-bottom: 20vh;
+}
+
+#react-activity-calendar {
+  font-size: x-large;
+}
+
+#githubstats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+#githubstats > div:nth-child(1):img svg {
+  font-size: 300px;
+}
+
+/* contact  */
+#contact {
+  width: 80%;
+  margin: auto;
+}
+.row {
+  display: flex;
+  justify-content: space-evenly;
+}
+.contact-left {
   flex-basis: 35%;
 }
-.contact-right{
-  flex-basis: 60%;
+.contact-right {
+  flex-basis: 50%;
 }
 
-.contact-left p {  
+.contact-left p {
   margin-top: 35px;
-
 }
-.contact-left p i{  
+.contact-left p i {
   color: #00bcd4;
   margin-top: 15px;
   font-size: 25px;
@@ -337,7 +346,7 @@ justify-content: space-evenly;
 .social-icons {
   margin-top: 30px;
 }
-.social-icons a{
+.social-icons a {
   text-decoration: none;
   font-size: 30px;
   margin-right: 15px;
@@ -345,35 +354,36 @@ justify-content: space-evenly;
   display: inline-block;
   transition: transform 0.5s;
 }
-.social-icons a:hover{
+.social-icons a:hover {
   color: #ffc107;
   transition: transformY(-5px);
 }
 
-.btn.btn2{
-   display: inline-block;
-   background-color: #00bcd4;;
-   border: 5px solid transparent;
-   text-decoration: none;
-   border-radius: 10px;
-   margin-top: 15px;
+.btn.btn2 {
+  display: inline-block;
+  background-color: #00bcd4;
+  border: 5px solid transparent;
+  text-decoration: none;
+  border-radius: 10px;
+  margin-top: 15px;
 }
-.contact-right form{
+.contact-right form {
   width: 100%;
 }
-form input,form textarea{
+form input,
+form textarea {
   width: 100%;
   border: 0;
   outline: 15px;
   background-color: #262622;
-  padding: 15px;
+  padding: 10px;
   margin: 15px 0;
   color: #fff;
   font-size: 18px;
   border-radius: 6px;
 }
 
-form .btn2{
+form .btn2 {
   padding: 9px 39px;
   font-size: 18px;
   margin-top: 20px;
@@ -382,17 +392,17 @@ form .btn2{
   background-color: gold;
 }
 
-#msg{
+#msg {
   color: rgb(235, 220, 8);
   margin-top: -40px;
   display: block;
 }
 
-#contact{
+#contact {
   margin-bottom: 30vh;
 }
 
-#contact_text{
+#contact_text {
   font-size: 230%;
   text-align: center;
   margin-bottom: 15vh;
