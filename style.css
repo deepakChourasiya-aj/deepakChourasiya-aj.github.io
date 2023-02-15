@@ -59,6 +59,13 @@ nav ul li a :hover::after {
   background-color: #ffc107;
 }
 
+.nav-link>button{
+  font-size: initial;
+  border-radius: 5px;
+  padding: 3px 15px 3px 15px;
+  background-color: gold;
+}
+
 /* ---------------Home section-------------------- */
 #home {
   display: flex;
@@ -295,7 +302,9 @@ border: 3px solid;
   grid-template-columns: repeat(2,1fr);
 }
 
-
+#githubstats>div:nth-child(1):img svg{
+  font-size: 300px
+}
 
 /* contact  */
 #contact{
