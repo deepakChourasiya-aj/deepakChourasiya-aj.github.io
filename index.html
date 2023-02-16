@@ -29,15 +29,16 @@
              <nav id="nav-menu" >
               <!-- <img src="" alt="Deepak" class="logo"> -->
               <h1 style="color: white;"><span style="color:gold" >D</span>eepak</h1>
-              <ul >
+              <ul id="sidemenu">
                 <li><a class="nav-link home" href="#home">HOME</a></li>
                 <li><a class="nav-link about" href="#about">ABOUT</a></li>
                 <li><a class="nav-link skills" href="#skills">SKILLS</a></li>
                 <li><a class="nav-link projects" href="#projects">PROJECTS</a></li>
                 <li><a class="nav-link contact" href="#contact">CONTACT</a></li>
               <li><a class="nav-link resume" href="deepak_resume.pdf" download><button id="resume-button-2">RESUME</button></a></li>
+             <i class="uil uil-times" onclick="closemenu()"></i>             
               </ul>
-             </nav>
+              <i class="uil uil-bars" onclick="openmenu()"></i>             </nav>
       </div>
    </div>
    <!-- ---------------------------------------------Home Page--------------------------------------->
@@ -47,8 +48,8 @@
           <h1 id="user-detail-name" >Deepak</h1>
           <p id="user-detail-intro"> An aspiring software developer with 1200hr of coding experience passionate about technology </p>
           <div id="resume_btn1">
-            <a id="resume-button-2" href="https://drive.google.com/file/d/1ZvaB_-bSCtWWAGExGhZ51e9v1n0b9ixG/view?usp=sharing" target="_blank"><button>Resume</button></a>
-            <a href="deepak_resume.pdf" download><button>
+            <a id="resume-button-1" href="https://drive.google.com/file/d/1ZvaB_-bSCtWWAGExGhZ51e9v1n0b9ixG/view?usp=sharing" target="_blank"><button>Resume</button></a>
+            <a  href="deepak_resume.pdf" id="resume-button-1" download><button>
               <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" aria-hidden="true" focusable="false" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M416 199.5h-91.4V64H187.4v135.5H96l160 158.1 160-158.1zM96 402.8V448h320v-45.2H96z"></path></svg>
             </button></a>
           </div>
@@ -58,8 +59,7 @@
         </div>
       </section>
 <!----------------------------------------About Page------------------------------------->
-<br style="color
-:white">
+<br style="color:white">
 
 <section id="about" class="about section">
   <h1 style="margin-bottom: 40px;" id="aboutheading">About Me </h1>
@@ -68,13 +68,13 @@
     <button id="experience_button" >Experience</button>
   </div> -->
   <div class="about_container">
-    <div class="about_section">
+    <div id="about_image" class="about_section">
       <img width="60%" src="deepakimg.jpg" alt="">
     </div>
     <div class="about_section">
       <h1 id="user-detail-name"></h1>
       <p id="user-detail-intro">
-        An Aspiring backend developer with 1200 hours of practical coding experience, strongly passionate about new technologies, and a collaborative team player proficient in HTML,CSS,Javascript,MongoDB,Express.js,AWS,GitHub.
+        An Aspiring backend developer with 1200 hours of practical coding experience, strongly passionate about new technologies, and a collaborative team player proficient.
       </p>
       <div class="about_ex_projects">
         <div id="projects">
@@ -252,7 +252,7 @@
   <h1 id="githtext">GitHub-Activity-Calendar</h1>
   
   <div id="github_activity_calender">
-    <div id="react-activity-calendar" > <h2>Github react activity calender</h2>
+    <div id="react-activity-calendar" >
       <div class="calendar"></div>
     </div>
 
@@ -281,19 +281,6 @@
   
 <!-- [![willianrod's wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=deepakChourasiya-aj)](https://github.com/anuraghazra/github-readme-stats) -->
 </section>
-
-
-    <!-------------------- CONTACTS ---------------------->
-    <!-- <section id="contact">
-      <h1>Contact</h1>
-      <a id="contact-github" href="https://github.com/deepakChourasiya-aj">GitHub</a>
-      <a id="contact-linkedin" href="https://www.linkedin.com/in/deepak-chourasiya-3a4a9220a/"
-        >LinkedIn</a
-      >
-      <a id="contact-phone" href="#">Mobile</a>
-      <a id="contact-email" href="deepak1812002@gmail.com">Email</a>
-    </section> -->
-
 
     <!--------------------------CONTACTS..------------------------------------  -->
 <section id="contact">
@@ -338,23 +325,23 @@
 </script>
 
 <script>
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbxZkJXt7f7-KOFBpc-ZiNTWP8P4ADGfO0kv82HlDKRM099MrdBSf8rrVgjS3umS6dU5/exec'
-  const form = document.forms['submit-to-google-sheet']
-  const msg = document.getElementById("msg")
+  // const scriptURL = 'https://script.google.com/macros/s/AKfycbxZkJXt7f7-KOFBpc-ZiNTWP8P4ADGfO0kv82HlDKRM099MrdBSf8rrVgjS3umS6dU5/exec'
+  // const form = document.forms['submit-to-google-sheet']
+  // const msg = document.getElementById("msg")
 
 
-  form.addEventListener('submit', e => {
-    e.preventDefault()
-    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response => {
-        msg.innerHTML = "Message has been sent successfully Thank you for contacting me.."
-        setTimeout(function(){
-          msg.innerHTML = ""
-        },5000)
-        form.reset();
-      })
-      .catch(error => console.error('Error!', error.message))
-  })
+  // form.addEventListener('submit', e => {
+  //   e.preventDefault()
+  //   fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+  //     .then(response => {
+  //       msg.innerHTML = "Message has been sent successfully Thank you for contacting me.."
+  //       setTimeout(function(){
+  //         msg.innerHTML = ""
+  //       },5000)
+  //       form.reset();
+  //     })
+  //     .catch(error => console.error('Error!', error.message))
+  // })
 </script>
 
 <script src="gitcalendar/gitcalendar.js"></script>

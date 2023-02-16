@@ -110,7 +110,7 @@ nav ul li a :hover::after {
   color: skyblue;
 }
 #user-detail-intro {
-  font-size: 120%;
+  font-size: 100%;
   margin-top: 20px;
 }
 #resume_btn1 {
@@ -294,7 +294,7 @@ nav ul li a :hover::after {
 .react-activity-calendar {
   text-align: center;
   margin-top: 20vh;
-  margin-bottom: 20vh;
+  margin-bottom: 10vh;
 }
 
 #githtext {
@@ -305,6 +305,7 @@ nav ul li a :hover::after {
 
 #react-activity-calendar {
   font-size: x-large;
+  margin-bottom: 10vh;
 }
 
 #githubstats {
@@ -314,6 +315,9 @@ nav ul li a :hover::after {
 
 #githubstats > div:nth-child(1):img svg {
   font-size: 300px;
+}
+.calendar{
+  margin-bottom: 20px;
 }
 
 /* contact  */
@@ -406,4 +410,93 @@ form .btn2 {
   font-size: 230%;
   text-align: center;
   margin-bottom: 15vh;
+}
+#githubstats{
+  display: grid;
+  grid-template-columns:repeat(1,1fr) ;
+  margin: auto;
+}
+#githubstats>div>img{width: 60%;}
+#github-top-langs{width: 60%;}
+/* css for small screen size  */
+
+nav .uil{
+  display: none;
+}
+@media only screen and (max-width: 600px){
+
+    /* #header {
+      background-image: url();
+    } */
+    .header-text{
+
+    }
+    nav ul {
+      background-color: #ff004f;
+      position:fixed;
+      top:0;
+      right: -200px;
+      width: 200px;
+      height: 100vh;
+      padding-top:50px;
+      z-index: 2;
+      transition: right 0.5s;;
+    }
+    nav ul li {
+      display: block;
+      margin:25px;
+    }
+    nav ul .fas{
+      position: absolute;
+      top:25px;
+      left:35px;
+
+    }
+   
+    #githubstats{
+      display: grid;
+      grid-template-columns:repeat(1,1fr) ;
+      margin: auto;
+    }
+    /* skills */
+    #skills_container{
+      display: grid;
+      grid-template-columns:repeat(2,1fr) ;
+      margin: auto;
+    }
+
+    /* project_container */
+    .project_container{
+      display: grid;
+      grid-template-columns:repeat(1,1fr) ;
+      margin: auto;
+    }
+      /* about_section */
+      .about_container{
+        display: grid;
+        grid-template-columns:repeat(1,1fr) ;
+        margin: auto;
+        justify-content: space-evenly;
+        text-align: center;
+      }
+      .about_section{
+        width: 100%;
+        text-align: center;
+        margin: auto;
+        align-items: center;
+      }
+      #about_image>img{
+        width: 70%;
+      }
+      #about_image{
+        width: 100%;
+      }
+/* row */
+  .row{
+    display: grid;
+    grid-template-columns:repeat(1,1fr) ;
+    margin: auto;
+    /* justify-content: space-evenly; */
+    /* text-align: center; */
+  }
 }
