@@ -393,7 +393,7 @@ form .btn2 {
   margin-top: 20px;
   cursor: pointer;
   border-radius: 11px;
-  background-color: gold;
+  background-color: #00bcd4;
 }
 
 #msg {
@@ -499,4 +499,11 @@ nav .uil{
     /* justify-content: space-evenly; */
     /* text-align: center; */
   }
+}
+
+#resume>a{
+  display: none;
+}
+#logo_img_theme{
+  width: 90%;
 }
