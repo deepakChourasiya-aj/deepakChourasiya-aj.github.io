@@ -77,11 +77,12 @@ nav ul li a :hover::after {
   margin-bottom: 90px;
 }
 #home > div {
-  width: 40%;
+  /* width: 40%; */
 }
 #intro_section {
-  width: 40%;
+  width: 50%;
 }
+
 
 #resume_btn1 > a:nth-child(1) > button {
   padding: 6px;
@@ -117,6 +118,45 @@ nav ul li a :hover::after {
   margin-top: 20px;
 }
 
+#socialiconslinks{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  gap: 5px;
+  text-align: center;
+  align-items: center;
+}
+ #socialiconslinks>i:hover {
+  color:  #cc150fde;
+}
+.logotheme {
+  width: 40%;
+}
+.logotheme>img{
+  width: 60%;
+  text-align: center;
+  margin-left: 140px;
+  border-radius: 27px;
+}
+.fa-linkedin{
+  font-size: 30px;
+  
+}
+.fa-github{
+  font-size: 30px;
+}
+.fa-twitter{
+  font-size: 30px;
+}
+a:hover {
+  background-color: yellow;
+}
+.name {
+  font-size: 3rem;
+}
+#span_name{
+  color: #a8b90e71;
+  color: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+}
 /* ------------------About---------------------------------- */
 
 #aboutheading {
@@ -157,6 +197,8 @@ nav ul li a :hover::after {
 }
 .about_section img {
   border-radius: 15px;
+    width: 80%;
+    height: 53vh;
 }
 
 .about_ex_projects {
@@ -206,14 +248,13 @@ nav ul li a :hover::after {
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 .project_container > div {
-  background-color: #3f51b5;
-  border-radius: 20px;
+  background: linear-gradient(#e66465, #9198e5);  border-radius: 20px;
   padding: 15px;
   color: white;
 }
 #project_img {
   width: 100%;
-  border-radius: 10px;
+  /* border-radius: 10px; */
 }
 .project-title {
   text-align: center;
@@ -231,8 +272,10 @@ nav ul li a :hover::after {
   display: flex;
   margin: auto;
   text-align: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   margin-top: 5vh;
+  align-items: center;
+
 }
 #deployed_container > a {
   /* display: flex; */
@@ -246,13 +289,29 @@ nav ul li a :hover::after {
   text-decoration: none;
 }
 .project-deployed-link > button {
-  border-radius: 15px;
-  background-color: black;
-  color: white;
-  padding: 3px;
-  padding-left: 10px;
-  padding-right: 10px;
-  border: 3px solid;
+
+  align-items: center;
+  background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  display: flex;
+  font-family: Phantomsans, sans-serif;
+  font-size: 20px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 90%;
+  min-width: 81px;
+  padding: 9px;
+
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
 }
 .project-tech-stack {
 }
@@ -267,12 +326,15 @@ nav ul li a :hover::after {
 #skills_container {
   width: 80%;
   margin: auto;
-  margin-top: 20vh;
+  margin-top: 10vh;
+  /* padding-top: 85px; */
   display: grid;
   text-align: center;
   justify-content: space-evenly;
   grid-template-columns: repeat(4, 1fr);
   gap: 15px;
+  border: 2px solid white;
+  padding: 5px;
 }
 .skills-card > img {
   width: 60%;
@@ -280,9 +342,10 @@ nav ul li a :hover::after {
 #skills_i_have {
   font-size: 230%;
   text-align: center;
+  padding-top: 83px;
 }
 #skills {
-  margin-top: 20vh;
+  margin-top: 10vh;
 }
 
 /* github calenders... */
@@ -409,7 +472,8 @@ form .btn2 {
 #contact_text {
   font-size: 230%;
   text-align: center;
-  margin-bottom: 15vh;
+  margin-bottom: 7vh;
+  padding-top: 83px;
 }
 #githubstats{
   display: grid;

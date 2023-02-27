@@ -16,6 +16,8 @@
   <!-- githupb link -->
   <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
   <!-- githublink.. -->
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,6 +27,7 @@
 </head>
 
 <body>
+
   <div id="headers">
     <div class="container">
       <nav id="nav-menu">
@@ -36,7 +39,7 @@
           <li><a class="nav-link skills" href="#skills">SKILLS</a></li>
           <li><a class="nav-link projects" href="#projects">PROJECTS</a></li>
           <li><a class="nav-link contact" href="#contact">CONTACT</a></li>
-          <li><a class="nav-link resume" href="deepak_resume.pdf" download><button
+          <li><a class="nav-link resume" href="deepak_resume.pdf" download ><button
                 id="resume-button-1">RESUME</button></a></li>
           <i class="uil uil-times" onclick="closemenu()"></i>
         </ul>
@@ -45,31 +48,50 @@
     </div>
   </div>
   <!-- ---------------------------------------------Home Page--------------------------------------->
-  <section id="home" style="margin-top: 75px;">
-    <div id="intro_section">
-      <p style="color: #d3e995">Welcome to heaven I'm</p>
-      <h1 id="user-detail-name">Deepak</h1>
-      <p id="user-detail-intro"> An aspiring software developer who is passionate about 
-        technologies </p>
+  <section id="home" >
+ 
+    <div id="intro_section"  style="margin-top: 80px;">
+      <p style="color: #d3e995">Hi Everyone </p>
+      <h1 id="user-detail-name"></h1>
+      <p id="user-detail-intro">
+        <h1 class="name">
+           I'm <span id="span_name">Deepak Chourasiya</span>
+           <span>
+            <br>
+            Full
+            Stack Web Developer.
+           </span>
+      </h1>
+      </p>
       <div id="resume_btn1">
         <a id="resume-button-2" download
           href="https://drive.google.com/file/d/1ZvaB_-bSCtWWAGExGhZ51e9v1n0b9ixG/view?usp=sharing"
           target="_blank"><button>Resume</button></a>
-        <a  href="deepak_resume.pdf" id="resume-button-2" download>
-           <button>
+        <a  href="deepak_resume.pdf"  id="resume-button-2"  onclick="open_in_newtab()">
+           <!-- <button>
             <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" aria-hidden="true"
             focusable="false" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
             <path d="M416 199.5h-91.4V64H187.4v135.5H96l160 158.1 160-158.1zM96 402.8V448h320v-45.2H96z"></path>
-          </svg>
+          </svg> -->
+
            </button>
         </a>
       </div>
     </div>
-    <div class="logotheme">
-      <img id="logo_img_theme"
+    <div class="logotheme" style="margin-top: 80px;">
+      <!-- <img id="logo_img_theme"
         src="https://media4.giphy.com/media/u2pmTWUi0MXjyrMaVj/200w.gif?cid=6c09b952ozzrg9j3jbbriye1yj2rm2s1qz0usyfiuj04f89d&rid=200w.gif&ct=g"
-        alt="">
+        alt=""> -->
+        <img src="deepakimg.jpg" alt="">
     </div>
+    <div id="socialiconslinks" style="margin-top: 80px;">
+      <i class="fa-brands fa-github"></i>
+      <br>
+      <i class="fa-brands fa-linkedin"></i>
+      <br>
+      <!-- <i class="fa-brands fa-twitter"></i> -->
+    </div>
+
   </section>
   <!----------------------------------------About Page------------------------------------->
   <br style="color:white">
@@ -82,19 +104,12 @@
   </div> -->
     <div class="about_container">
       <div id="about_image" class="about_section">
-        <img class="home-img" width="60%" src="deepakimg.jpg" alt="">
+        <img class="home-img" width="60%" src="https://cdn.dribbble.com/users/1068771/screenshots/14247776/media/fbf5f8ae629e3a6248006e748ddd6b67.jpg" alt="">
       </div>
       <div class="about_section">
         <h1 id="user-detail-name"></h1>
         <p id="user-detail-intro">
-          An Aspiring backend developer with 1200
-          hours of practical coding experience, strongly
-          passionate about new technologies, and a
-          collaborative team player proficient in building
-          efficient software solutions using technical
-          skills HTML,CSS,Javascript,Node.js,Express.js,
-          MongoDB, looking for an opportunity as a
-          software developer.
+          An Aspiring full-stack web developer with 1200 hours of practical coding experience, strongly passionate about new technologies. collaborative team player proficient in building efficient software solutions. looking for a challenging role in growth oriented organisation.
         </p>
         <div class="about_ex_projects">
           <div id="projects">
@@ -135,7 +150,7 @@
             <a class="project-github-link" href="https://github.com/deepakChourasiya-aj/amiable-place-6800"><i
                 class="fa fa-github fa-3x"></i>
             </a>
-            <a class="project-deployed-link" href="https://willowy-gaufre-978d06.netlify.app/"><button>See</button></a>
+            <a class="project-deployed-link" href="https://willowy-gaufre-978d06.netlify.app/"><button>Live</button></a>
           </div>
         </div>
       </div>
@@ -154,7 +169,7 @@
             <a class="project-github-link" href="https://github.com/deepakChourasiya-aj/rapid-competition-275"><i
                 class="fa fa-github fa-3x"></i>
             </a>
-            <a class="project-deployed-link" href="https://rainbow-moxie-330fc6.netlify.app/"><button>See</button></a>
+            <a class="project-deployed-link" href="https://rainbow-moxie-330fc6.netlify.app/"><button>Live</button></a>
           </div>
         </div>
       </div>
@@ -173,7 +188,7 @@
             <a class="project-github-link" href="https://github.com/deepakChourasiya-aj/spry-ear-9433"><i
                 class="fa fa-github fa-3x"></i>
             </a>
-            <a class="project-deployed-link" href="https://startling-donut-2df673.netlify.app/"><button>See</button></a>
+            <a class="project-deployed-link" href="https://startling-donut-2df673.netlify.app/"><button>Live</button></a>
           </div>
         </div>
       </div>
@@ -194,7 +209,7 @@
                 class="fa fa-github fa-3x"></i>
             </a>
             <a class="project-deployed-link"
-              href="https://app.netlify.com/sites/willowy-gaufre-978d06/overview"><button>See</button></a>
+              href="https://app.netlify.com/sites/willowy-gaufre-978d06/overview"><button>Live</button></a>
           </div>
         </div>
       </div>
@@ -242,6 +257,31 @@
       </div>
     </div>
   </section>
+
+<!-- tools section -->
+
+<section class="toolsskills" id="skills">
+  <h1 id="skills_i_have">Tools I Use..</h1>
+  <div id="skills_container">
+    <div class="skills-card">
+      <img class="skills-card-img" src="./imgage/git.png" alt="git.png" />
+      <h5 class="skills-card-name">Git</h5>
+    </div>
+    <div class="skills-card">
+      <img class="skills-card-img" src="./imgage/github (3).png" alt="express.png" />
+      <h5 class="skills-card-name">GitHub</h5>
+    </div>
+    <div class="skills-card">
+      <img class="skills-card-img" src="./imgage/npm.png" alt="npm.png" />
+      <h5 class="skills-card-name">NPM</h5>
+    </div>
+    <div class="skills-card">
+      <img class="skills-card-img" src="./imgage/postman.png" alt="postman.png" />
+      <h5 class="skills-card-name">Postman</h5>
+    </div>
+  </div>
+</section>
+
 
   <!-- Prepare a container for your calendar. -->
   <!-------------------- GitHUB ---------------------->
