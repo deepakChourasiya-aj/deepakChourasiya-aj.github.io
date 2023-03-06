@@ -5,15 +5,16 @@
   box-sizing: border-box;
 }
 body {
-  background-color: #080808;
-  color: skyblue;
+  background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+  color: white;
   font-family: "Roboto Condensed", sans-serif;
 }
 #headers {
   /* position: -webkit-sticky; */
   position: sticky;
   background-attachment: fixed;
-  background-color: #3f51b5;
+  /* background-color: #3f51b5; */
+  background-image: linear-gradient(144deg,#AF40FF,#00DDEB 50%,#AF40FF);
   top: 0;
 }
 .container {
@@ -36,7 +37,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: skyblue;
+  color: white;
   text-decoration: none;
   font-size: 18px;
   position: relative;
@@ -89,8 +90,10 @@ nav ul li a :hover::after {
   padding-right: 13px;
   padding-left: 13px;
   font-size: 117%;
-  background-color: cornflowerblue;
+  background-color: navy;
+  color: white;
   border-radius: 6px;
+  border: none;
 }
 #resume_btn1 > a:nth-child(2) > button {
   padding: 6px;
@@ -148,13 +151,13 @@ nav ul li a :hover::after {
   font-size: 30px;
 }
 a:hover {
-  background-color: yellow;
+  /* background-color: yellow; */
 }
 .name {
   font-size: 3rem;
 }
 #span_name{
-  color: #a8b90e71;
+  color: navy;
   color: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
 }
 /* ------------------About---------------------------------- */
@@ -243,13 +246,14 @@ a:hover {
   justify-content: space-evenly;
   grid-template-columns: repeat(2, 1fr);
   gap: 40px;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+  /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
     rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
-    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
 }
 .project_container > div {
   background: linear-gradient(#e66465, #9198e5);  border-radius: 20px;
   padding: 15px;
+  border-radius: 10px;
   color: white;
 }
 #project_img {
@@ -333,7 +337,7 @@ a:hover {
   justify-content: space-evenly;
   grid-template-columns: repeat(4, 1fr);
   gap: 15px;
-  border: 2px solid white;
+  /* border: 2px solid white; */
   padding: 5px;
 }
 .skills-card > img {
@@ -422,7 +426,7 @@ a:hover {
   transition: transform 0.5s;
 }
 .social-icons a:hover {
-  color: #ffc107;
+  /* color: #ffc107; */
   transition: transformY(-5px);
 }
 
