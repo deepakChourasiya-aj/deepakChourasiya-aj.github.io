@@ -496,8 +496,12 @@ nav .uil{
     /* #header {
       background-image: url();
     } */
-    .header-text{
-
+    .header-text h1{
+     font-size: 30px;
+    }
+    nav .uil {
+      display: block;
+      font-size: 25px;
     }
     nav ul {
       background-color: #ff004f;
@@ -514,13 +518,24 @@ nav .uil{
       display: block;
       margin:25px;
     }
-    nav ul .fas{
+    nav ul .uil{
       position: absolute;
       top:25px;
-      left:35px;
+      left:25px;
+      cursor: pointer;
 
     }
-   
+   /*for the home page.  */
+   #home{
+    display: grid;
+    grid-template-columns: repaet(1,1fr);
+    width: 100;
+   }
+   .logotheme>img{
+    width: 100%;
+    margin: auto;
+   }
+
     #githubstats{
       display: grid;
       grid-template-columns:repeat(1,1fr) ;
