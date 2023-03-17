@@ -250,12 +250,17 @@ a:hover {
     rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
 }
+
 .project_container > div {
   background: linear-gradient(#e66465, #9198e5);  border-radius: 20px;
   padding: 15px;
-  border-radius: 10px;
+  border-radius: 5px;
   color: white;
 }
+ .project_container :hover{
+  background-color: cornflowerblue;
+ }
+
 #project_img {
   width: 100%;
   /* border-radius: 10px; */
@@ -407,7 +412,7 @@ a:hover {
   margin-top: 35px;
 }
 .contact-left p i {
-  color: #00bcd4;
+  color: white;
   margin-top: 15px;
   font-size: 25px;
   margin-right: 10px;
@@ -432,11 +437,13 @@ a:hover {
 
 .btn.btn2 {
   display: inline-block;
-  background-color: #00bcd4;
+  background-color: navy;
+  color: white;
   border: 5px solid transparent;
   text-decoration: none;
   border-radius: 10px;
   margin-top: 15px;
+  padding: 3px;
 }
 .contact-right form {
   width: 100%;
@@ -460,7 +467,9 @@ form .btn2 {
   margin-top: 20px;
   cursor: pointer;
   border-radius: 11px;
-  background-color: #00bcd4;
+  background-color: navy;
+    color: white;
+    border: none;
 }
 
 #msg {
@@ -496,6 +505,12 @@ nav .uil{
     /* #header {
       background-image: url();
     } */
+    #about{
+      width: 100%;
+    }
+    #projects{
+      width: 100%;
+    }
     .header-text h1{
      font-size: 30px;
     }
@@ -529,13 +544,16 @@ nav .uil{
    #home{
     display: grid;
     grid-template-columns: repaet(1,1fr);
-    width: 100;
+    width: 90%;
+   }
+   #intro_section{
+    font-size: small;
    }
    .logotheme>img{
     width: 100%;
     margin: auto;
    }
-
+   
     #githubstats{
       display: grid;
       grid-template-columns:repeat(1,1fr) ;
@@ -553,6 +571,11 @@ nav .uil{
       display: grid;
       grid-template-columns:repeat(1,1fr) ;
       margin: auto;
+      width: 90%;
+    }
+    .deployed_container{
+      margin-top: 1px;
+
     }
       /* about_section */
       .about_container{
@@ -569,11 +592,33 @@ nav .uil{
         align-items: center;
       }
       #about_image>img{
-        width: 70%;
+        width: 90%;
+        height: 65vh;
+        margin: auto;
       }
       #about_image{
         width: 100%;
       }
+      .about_section{
+        width: 100%;
+        text-align: center;
+      }
+      #user-detail-intro{
+        text-align: center;
+        width: 100%;
+      }  
+     .project-card{
+      font-size: small;
+     }
+     i {
+      font-size: small;
+     }
+     #project_img{
+      height: 34vh;
+     }
+     .project-deployed-link > button {
+      font-size: small;
+     }
 /* row */
   .row{
     display: grid;
@@ -589,4 +634,33 @@ nav .uil{
 }
 #logo_img_theme{
   width: 90%;
+}
+
+
+/* expriments */
+button {
+  border: 3px solid #ff7a59;
+}
+
+button:hover {
+  border: 3px dotted #ff7a59;
+  color: #ff7a59;
+  background: #fff;
+}
+
+button:after {
+  top: -100%;
+  left: 0px;
+  width: 100%;
+  position: absolute;
+  background: #ff7a59;
+  border-radius: 5px;
+  content: 'Flipped';
+  transform-origin: left bottom;
+  transform: rotateX(90deg);
+}
+
+button:hover {
+  transform-origin: center bottom;
+  transform: rotateX(-90deg) translateY(50%);
 }
