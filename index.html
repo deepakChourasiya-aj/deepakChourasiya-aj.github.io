@@ -41,8 +41,13 @@
           <li><a class="nav-link skills" href="#skills">SKILLS</a></li>
           <li><a class="nav-link projects" href="#projects">PROJECTS</a></li>
           <li><a class="nav-link contact" href="#contact">CONTACT</a></li>
-          <li><a class="nav-link resume" href="deepak_resume.pdf" download ><button
-                id="resume-button-1">RESUME</button></a></li>
+          <li><a class="nav-link resume"  href="deepak_resume.pdf" download ><button
+             id="resume-button-1">RESUME</button></a></li>
+
+                <!-- <button onclick="resume()" id="resume-button-2"><a id="resume-link-2" href="./resume/Abhishek_Resume.pdf"
+                  target="_blank" download="Abhishek_Resume.pdf">Resume</a></button> -->
+
+
           <i class="uil uil-times" onclick="closemenu()"></i>
         </ul>
         <i class="uil uil-bars" onclick="openmenu()"></i>
@@ -66,18 +71,11 @@
       </h1>
       </p>
       <div id="resume_btn1">
-        <a id="resume-button-2" download
+        <!-- <a id="resume-button-2" download
           href="https://drive.google.com/file/d/1ZvaB_-bSCtWWAGExGhZ51e9v1n0b9ixG/view?usp=sharing"
-          target="_blank"><button>Resume</button></a>
-        <a  href="deepak_resume.pdf"  id="resume-button-2"  onclick="open_in_newtab()">
-           <!-- <button>
-            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" aria-hidden="true"
-            focusable="false" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-            <path d="M416 199.5h-91.4V64H187.4v135.5H96l160 158.1 160-158.1zM96 402.8V448h320v-45.2H96z"></path>
-          </svg> -->
-
-           </button>
-        </a>
+          target="_blank"> -->
+          <!-- <a  href="deepak_resume.pdf"   onclick="resume()" id="resume-button-2" > -->
+          <button onclick="resume()" id="resume-button-2" ><a id="resume-link-2" href="deepak_resume.pdf"  target="_blank" download="deepak_resume.pdf" >Resume</a></button>
       </div>
     </div>
     <div class="logotheme" style="margin-top: 80px;">
@@ -115,12 +113,10 @@
         <div class="about_ex_projects">
           <div id="projects">
             <i class="uil uil-shield"></i>
-            <!-- <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 384 512" class="about__icon" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M97.12 362.63c-8.69-8.69-4.16-6.24-25.12-11.85-9.51-2.55-17.87-7.45-25.43-13.32L1.2 448.7c-4.39 10.77 3.81 22.47 15.43 22.03l52.69-2.01L105.56 507c8 8.44 22.04 5.81 26.43-4.96l52.05-127.62c-10.84 6.04-22.87 9.58-35.31 9.58-19.5 0-37.82-7.59-51.61-21.37zM382.8 448.7l-45.37-111.24c-7.56 5.88-15.92 10.77-25.43 13.32-21.07 5.64-16.45 3.18-25.12 11.85-13.79 13.78-32.12 21.37-51.62 21.37-12.44 0-24.47-3.55-35.31-9.58L252 502.04c4.39 10.77 18.44 13.4 26.43 4.96l36.25-38.28 52.69 2.01c11.62.44 19.82-11.27 15.43-22.03zM263 340c15.28-15.55 17.03-14.21 38.79-20.14 13.89-3.79 24.75-14.84 28.47-28.98 7.48-28.4 5.54-24.97 25.95-45.75 10.17-10.35 14.14-25.44 10.42-39.58-7.47-28.38-7.48-24.42 0-52.83 3.72-14.14-.25-29.23-10.42-39.58-20.41-20.78-18.47-17.36-25.95-45.75-3.72-14.14-14.58-25.19-28.47-28.98-27.88-7.61-24.52-5.62-44.95-26.41-10.17-10.35-25-14.4-38.89-10.61-27.87 7.6-23.98 7.61-51.9 0-13.89-3.79-28.72.25-38.89 10.61-20.41 20.78-17.05 18.8-44.94 26.41-13.89 3.79-24.75 14.84-28.47 28.98-7.47 28.39-5.54 24.97-25.95 45.75-10.17 10.35-14.15 25.44-10.42 39.58 7.47 28.36 7.48 24.4 0 52.82-3.72 14.14.25 29.23 10.42 39.59 20.41 20.78 18.47 17.35 25.95 45.75 3.72 14.14 14.58 25.19 28.47 28.98C104.6 325.96 106.27 325 121 340c13.23 13.47 33.84 15.88 49.74 5.82a39.676 39.676 0 0 1 42.53 0c15.89 10.06 36.5 7.65 49.73-5.82zM97.66 175.96c0-53.03 42.24-96.02 94.34-96.02s94.34 42.99 94.34 96.02-42.24 96.02-94.34 96.02-94.34-42.99-94.34-96.02z"></path></svg> -->
             <h5>Experience</h5>
             <small>6 months</small>
           </div>
           <div id="my_experience">
-            <!-- <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" class="about__icon" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M7.70996 3H14.5L15.01 3.5V7H14V5.98999H7.68994L6.82996 6.84998L6.47998 7H1.98999V7.48999V11.49V13H7V14H1.51001L1.01001 13.5V6.5V2.5L1.51001 2H6.51001L6.85999 2.15002L7.70996 3ZM7.48999 5H13.99L14 4.01001H7.5L7.14001 3.85999L6.29004 3.01001H2V6.01001H6.28003L7.14001 5.15002L7.48999 5Z"></path><rect x="8" y="8" width="1" height="6"></rect><rect x="10" y="8" width="1" height="6"></rect><rect x="12.0041" y="8.35193" width="1" height="6" transform="rotate(-20 12.0041 8.35193)"></rect></svg> -->
             <i class="uil uil-file-shield-alt"></i>
             <h5>40+ Project</h5>
             <small>Assignments</small>
@@ -383,3 +379,9 @@
 </script>
 
 <script src="gitcalendar/gitcalendar.js"></script>
+<script>
+  function resume() {
+    // window.location.assign('https://drive.google.com/file/d/1DPUbSCRDJbNd2Su1NAzYhed_QRKdp1gG/view?usp=sharing');
+    window.open("https://drive.google.com/file/d/1ZvaB_-bSCtWWAGExGhZ51e9v1n0b9ixG/view?usp=sharing", "_blank");
+  }
+</script>
