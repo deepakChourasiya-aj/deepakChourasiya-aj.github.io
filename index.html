@@ -41,9 +41,12 @@
           <li><a class="nav-link skills" href="#skills">SKILLS</a></li>
           <li><a class="nav-link projects" href="#projects">PROJECTS</a></li>
           <li><a class="nav-link contact" href="#contact">CONTACT</a></li>
-          <li><a class="nav-link resume"  href="deepak_resume.pdf" download ><button
-             id="resume-button-1">RESUME</button></a></li>
-
+          <!-- <li><a class="nav-link resume"  href="deepak_resume.pdf" download ><button
+            id="resume-button-1">RESUME</button></a></li> -->
+          <li>
+            <button onclick="resume()" id="resume-button-1" ><a  id="resume-link-1" href="deepak_resume.pdf"  target="_blank" download="deepak_resume.pdf" >Resume</a></button>  </li>
+            
+            <!-- <button onclick="resume()" id="resume-button-2" ><a id="resume-link-2" href="deepak_resume.pdf"  target="_blank" download="deepak_resume.pdf" >Resume</a></button> -->
                 <!-- <button onclick="resume()" id="resume-button-2"><a id="resume-link-2" href="./resume/Abhishek_Resume.pdf"
                   target="_blank" download="Abhishek_Resume.pdf">Resume</a></button> -->
 
@@ -381,6 +384,10 @@
 <script src="gitcalendar/gitcalendar.js"></script>
 <script>
   function resume() {
+    // window.location.assign('https://drive.google.com/file/d/1DPUbSCRDJbNd2Su1NAzYhed_QRKdp1gG/view?usp=sharing');
+    window.open("https://drive.google.com/file/d/1ZvaB_-bSCtWWAGExGhZ51e9v1n0b9ixG/view?usp=sharing", "_blank");
+  }
+  function resume1() {
     // window.location.assign('https://drive.google.com/file/d/1DPUbSCRDJbNd2Su1NAzYhed_QRKdp1gG/view?usp=sharing');
     window.open("https://drive.google.com/file/d/1ZvaB_-bSCtWWAGExGhZ51e9v1n0b9ixG/view?usp=sharing", "_blank");
   }

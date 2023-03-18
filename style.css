@@ -648,7 +648,7 @@ button:hover {
   background: #fff;
 }
 
-button:after {
+/* button:after {
   top: -100%;
   left: 0px;
   width: 100%;
@@ -658,9 +658,9 @@ button:after {
   content: 'Flipped';
   transform-origin: left bottom;
   transform: rotateX(90deg);
-}
+} */
 
-button:hover {
+/* button:hover {
   transform-origin: center bottom;
   transform: rotateX(-90deg) translateY(50%);
-}
+} */
