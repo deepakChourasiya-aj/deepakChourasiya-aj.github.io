@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
+
   <!-- githupb -->
   <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
   <!-- icons -->
@@ -17,9 +18,10 @@
   <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
   <!-- githublink.. -->
   <!-- font awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!--  -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -36,7 +38,7 @@
         <!-- <img src="" alt="Deepak" class="logo"> -->
         <h1 style="color: white;"><span style="color:gold">D</span>eepak</h1>
         <ul id="sidemenu">
-          <li><a class="nav-link home" href="#home">HOME</a></li>
+          <li><a  class="nav-link home" href="#home">HOME</a></li>
           <li><a class="nav-link about" href="#about">ABOUT</a></li>
           <li><a class="nav-link skills" href="#skills">SKILLS</a></li>
           <li><a class="nav-link projects" href="#projects">PROJECTS</a></li>
@@ -86,11 +88,14 @@
     <button id="experience_button" >Experience</button>
   </div> -->
     <div class="about_container">
-      <div id="about_image" class="about_section">
+      <div id="about_image" 
+      >
         <img class="home-img" width="60%" src="https://cdn.dribbble.com/users/1068771/screenshots/14247776/media/fbf5f8ae629e3a6248006e748ddd6b67.jpg" alt="">
       </div>
-      <div class="about_section">
-        <h1 id="user-detail-name">Deepak chourasiya</h1>
+      <div 
+      class="about_section"
+      >
+        <!-- <h1 id="user-detail-name">Deepak chourasiya</h1> -->
         <p id="user-detail-intro">
           An Aspiring full-stack web developer with 1200 hours of practical coding experience, strongly passionate about new technologies. collaborative team player proficient in building efficient software solutions HTML | CSS | JAVASCRIPT | NODE.js . looking for a challenging role in growth oriented organisation.
         </p>
@@ -102,7 +107,7 @@
           </div>
           <div id="my_experience">
             <i class="uil uil-file-shield-alt"></i>
-            <h5>40+ Project</h5>
+            <h5>50+ Project</h5>
             <small>Assignments</small>
           </div>
         </div>
@@ -114,9 +119,9 @@
   <section class="projectsection" id="projects">
     <h1 id="aboutheading">My Projects</h1>
     <!-- 1 -->
-    <div class="project_container">
+    <div  class="project_container">
 
-      <div class="project-card">
+      <div  class="project-card">
         <h3 class="project-title">Furniture stock</h3>
         <div><img id="project_img" src="furniturestock.png" alt=""></div>
         <div id="project_descriptions">
@@ -310,7 +315,7 @@
             <a id="contact-linkedin" href="https://www.linkedin.com/in/deepak-chourasiya-3a4a9220a/"><i
                 class="uil uil-github"></i></a>
           </div>
-          <a href="deepak_resume.pdf" class="btn btn2" download>Download CV</a>
+          <!-- <a href="deepak_resume.pdf" class="btn btn2" download>Download CV</a> -->
         </div>
 
         <div class="contact-right">
@@ -330,7 +335,7 @@
 
   <!-------------------- RESUME ---------------------->
   <section id="resume">
-    <a href="deepak_resume.pdf" id="resume-link-1" download>Resume</a>
+    <a style="text-decoration: none;" href="deepak_resume.pdf" id="resume-link-1" download>Resume</a>
   </section>
 </body>
 
@@ -360,6 +365,14 @@
   //     .catch(error => console.error('Error!', error.message))
   // })
 </script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+    import AOS from 'aos';
+    import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
+AOS.init();
+  </script>
 
 <script src="gitcalendar/gitcalendar.js"></script>
 <script>
