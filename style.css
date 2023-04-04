@@ -269,7 +269,7 @@ a:hover {
   margin: auto;
   justify-content: space-evenly;
   grid-template-columns: repeat(4, 1fr);
-  gap: 40px;
+  gap: 20px;
   /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
     rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
@@ -661,13 +661,10 @@ nav .uil {
     width: 85%;
   }
   .about_section {
-    /* text-align: center; */
     margin: auto;
-    /* align-items: center; */
   }
   #about_image > img {
-    width: 82%;
-    height: 23vh;
+    width: 80%;
     margin: auto;
   }
   #about_image {
@@ -677,9 +674,9 @@ nav .uil {
     width: 100%;
   }
   #user-detail-intro {
+    width: 20rem;
     text-align: center;
-    width: 100%;
-    /* border: 1px solid yellow; */
+    margin: auto;
   }
   .project-card {
     font-size: small;
