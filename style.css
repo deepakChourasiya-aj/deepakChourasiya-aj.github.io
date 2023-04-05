@@ -87,6 +87,10 @@ nav ul li a :hover::after {
 }
 
 /* ---------------Home section-------------------- */
+#codersImage{
+  border: 2px solid yellow;
+  width: 100%;
+}
 #home {
   display: flex;
   margin-top: 80px;
@@ -141,7 +145,6 @@ nav ul li a :hover::after {
 }
 #user-detail-intro {
   font-size: 100%;
-  margin-top: 20px;
 }
 #resume_btn1 {
   margin-top: 20px;
@@ -206,6 +209,8 @@ a:hover {
 }
 .about_container > div:nth-child(1) {
   width: 40%;
+  border: 2px solid red;
+
 }
 .about_container > div:nth-child(2) {
   width: 40%;
