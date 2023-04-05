@@ -39,11 +39,11 @@
         <!-- <img src="" alt="Deepak" class="logo"> -->
         <h1 style="color: white;"><span style="color:gold">D</span>eepak</h1>
         <ul id="sidemenu">
-          <li><a class="nav-link home" href="#home">HOME</a></li>
-          <li><a class="nav-link about" href="#about">ABOUT</a></li>
-          <li><a class="nav-link skills" href="#skills">SKILLS</a></li>
-          <li><a class="nav-link projects" href="#projects">PROJECTS</a></li>
-          <li><a class="nav-link contact" href="#contact">CONTACT</a></li>
+          <li><a onclick="closemenu()" class="nav-link home" href="#home">HOME</a></li>
+          <li><a onclick="closemenu()" class="nav-link about" href="#about">ABOUT</a></li>
+          <li><a onclick="closemenu()" class="nav-link skills" href="#skills">SKILLS</a></li>
+          <li><a onclick="closemenu()" class="nav-link projects" href="#projects">PROJECTS</a></li>
+          <li><a onclick="closemenu()" class="nav-link contact" href="#contact">CONTACT</a></li>
           <li>
             <button onclick="resume()" class="nav-link resume" id="resume-button-1"><a id="resume-link-1"
                 href="Deepak_Chourasiya_Resume.pdf" target="_blank" download="Deepak_Chourasiya_Resume.pdf">Resume</a></button>
@@ -392,15 +392,6 @@
   //     .catch(error => console.error('Error!', error.message))
   // })
 </script>
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>
-  AOS.init();
-  import AOS from 'aos';
-  import 'aos/dist/aos.css'; // You can also use <link> for styles
-  // ..
-  AOS.init();
-</script>
-
 <script src="gitcalendar/gitcalendar.js"></script>
 <script>
   function resume() {
