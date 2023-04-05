@@ -176,12 +176,6 @@
   .project-deployed-link > button {
     font-size: small;
   }
-  .about_ex_projects{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-  }
 
   form input,
   form textarea {
