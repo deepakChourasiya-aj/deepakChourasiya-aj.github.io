@@ -158,7 +158,9 @@ nav ul li a :hover::after {
   color: #cc150fde;
 }
 .logotheme {
-  width: 40%;
+  width: auto;
+  border: 2px solid rgb(66, 119, 61);
+
 }
 .logotheme > img {
   width: 62%;
@@ -563,9 +565,9 @@ nav .uil {
     width: 100%;
   }
   #myimage {
-    width: 161%;
+    /* width: 161%; */
     margin: auto;
-    margin-left: 44%;
+    /* margin-left: 44%; */
   }
   #projects {
     width: 100%;
@@ -622,6 +624,8 @@ nav .uil {
   .logotheme > img {
     width: 100%;
     margin: auto;
+    border: 2px solid red;
+
   }
 
   #githubstats {
@@ -684,7 +688,7 @@ nav .uil {
     width: 100%;
   }
   #user-detail-intro {
-    width: 20rem;
+        width: 90%;
     text-align: center;
     margin: auto;
   }
