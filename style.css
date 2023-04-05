@@ -88,7 +88,7 @@ nav ul li a :hover::after {
 
 /* ---------------Home section-------------------- */
 #codersImage{
-  border: 2px solid yellow;
+  /* border: 2px solid yellow; */
   width: 100%;
 }
 #home {
@@ -162,7 +162,7 @@ nav ul li a :hover::after {
 }
 .logotheme {
   width: auto;
-  border: 2px solid rgb(66, 119, 61);
+  /* border: 2px solid rgb(66, 119, 61); */
 
 }
 .logotheme > img {
@@ -209,7 +209,7 @@ a:hover {
 }
 .about_container > div:nth-child(1) {
   width: 40%;
-  border: 2px solid red;
+  /* border: 2px solid red; */
 
 }
 .about_container > div:nth-child(2) {
@@ -629,7 +629,7 @@ nav .uil {
   .logotheme > img {
     width: 100%;
     margin: auto;
-    border: 2px solid red;
+    /* border: 2px solid red; */
 
   }
 
