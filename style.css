@@ -585,7 +585,7 @@ nav .uil {
     font-size: 25px;
   }
   nav ul {
-    background-color: rgb(43, 3, 56);
+    background-color: rgba(0,0,0,0.6);
     position: fixed;
     top: 0;
     right: -200px;
