@@ -562,6 +562,21 @@ form .btn2 {
 nav .uil {
   display: none;
 }
+#nav-menu+h1{
+  cursor: pointer;
+}
+.social-icons{
+  padding-left: 5px;
+}
+
+/* footer css */
+footer>p{
+  text-align: center;
+  color: blanchedalmond;
+  margin: 10px;
+}
+
+
 @media only screen and (max-width: 600px) {
   /* #header {
       background-image: url();
@@ -632,7 +647,12 @@ nav .uil {
     /* border: 2px solid red; */
 
   }
-
+  #about_ex_projects{
+    display: flex;
+        margin-top: 5vh;
+        text-align: center;
+        justify-content: space-evenly;
+    }
   #githubstats {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
