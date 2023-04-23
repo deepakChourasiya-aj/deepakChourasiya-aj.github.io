@@ -162,6 +162,7 @@ nav ul li a :hover::after {
 }
 .logotheme {
   width: auto;
+  text-align: end;
   /* border: 2px solid rgb(66, 119, 61); */
 
 }
