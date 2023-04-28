@@ -17,7 +17,7 @@
  /* PROJECTS */
 .project_container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     gap: 40px;
     margin: auto;
     justify-content: space-evenly;
@@ -153,6 +153,7 @@
   .about_section {
     margin: auto;
   }
+
   #about_image {
     width: 100%;
   }
@@ -171,7 +172,7 @@
     font-size: small;
   }
   #project_img {
-    height: 14vh;
+    /* height: 14vh; */
   }
   .project-deployed-link > button {
     font-size: small;
@@ -198,3 +199,16 @@
     margin: auto;
   }
 }
+
+@media screen and (min-width: 711px) and (max-width: 1300px){
+ .about_ex_projects{
+  display: none;
+ }
+}
+@media screen and (min-width: 711px) and (max-width: 1070px){
+ .name{
+  font-size: 2rem;
+ }
+}
+1070
+/* about_ex_projects */

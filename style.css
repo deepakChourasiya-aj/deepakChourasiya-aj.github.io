@@ -279,15 +279,12 @@ a:hover {
 }
 .project_container {
   display: grid;
-  width: 92%;
+  width: 80%;
   padding-top: 10vh;
   margin: auto;
   justify-content: space-evenly;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 20px;
-  /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
-    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
-    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
 }
 
 .project_container > div {
@@ -296,6 +293,7 @@ a:hover {
   padding: 15px;
   border-radius: 5px;
   color: white;
+  text-align: center;
 }
 
 .project_container :hover {
@@ -305,8 +303,8 @@ a:hover {
 }
 
 #project_img {
-  width: 100%;
-  height: 10rem;
+  width: 90%;
+  /* height: 10rem; */
 }
 .project-title {
   text-align: center;
@@ -368,8 +366,14 @@ a:hover {
   color: #ff7a59;
 }
 #project_content {
-  margin: 10px;
+  /* margin: 10px; */
+  text-align: center;
+  font-size: small;
+  width: 80%;
+  margin: auto;
+  padding-top: 5px;
 }
+
 
 .fa {
   color: white;
@@ -720,12 +724,13 @@ footer>p{
   }
   .project-card {
     font-size: small;
+    text-align: center;
   }
   i {
     font-size: small;
   }
   #project_img {
-    height: 14vh;
+    /* height: 14vh; */
   }
   .project-deployed-link > button {
     font-size: small;
