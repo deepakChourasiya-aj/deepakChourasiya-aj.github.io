@@ -205,9 +205,31 @@
   display: none;
  }
 }
-@media screen and (min-width: 711px) and (max-width: 1070px){
+@media screen and (min-width: 711px) and (max-width: 1080px){
  .name{
   font-size: 2rem;
  }
+
+
+ /* changes on 17/05/23 */
+ nav .uil {
+  display: block;
+  font-size: 25px;
 }
-/* about_ex_projects */
+
+#sidemenu{
+  display: none;
+}
+nav ul {
+  background-color: rgb(43, 3, 56);
+  position: fixed;
+  top: 0;
+  right: -200px;
+  width: 200px;
+  height: 100vh;
+  padding-top: 50px;
+  z-index: 2;
+  transition: right 0.5s;
+}
+
+}
