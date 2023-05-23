@@ -97,10 +97,11 @@
       <div class="about_section">
         <!-- <h1 id="user-detail-name">Deepak chourasiya</h1> -->
         <p id="user-detail-intro">
-          An Aspiring full-stack web developer with 1200 hours of practical coding experience, strongly passionate about
-          new technologies. collaborative team player proficient in building efficient software solutions HTML | CSS |
-          JAVASCRIPT | NODE.js . looking for a challenging role in growth oriented organisation.
-        </p>
+          An Aspiring full-stack web developer with 1200 hours of
+          practical coding experience, strongly passionate about
+          new technologies. collaborative team player proficient in
+          building efficient software solutions. looking for a
+          challenging role in a growth-oriented organization.</p>
         <div class="about_ex_projects">
           <div id="projects">
             <i class="uil uil-shield"></i>
@@ -131,7 +132,8 @@
         <div id="project_descriptions">
           <!-- <h5>Features</h5> -->
           <div id="project_content">
-            <p class="project-description">WorkDesk is a realtime communication plateform it provides screen sharing feature, video calling support and chatting feature like zoom.</p>
+            <p class="project-description">WorkDesk is a realtime communication plateform it provides screen sharing
+              feature, video calling support and chatting feature like zoom.</p>
             <p class="project-tech-stack"><span> HTML | CSS | Javascript | Node.js | Express.js | Socket.io
                 | Peer.js</span></p>
           </div>
@@ -151,7 +153,8 @@
         <div id="project_descriptions">
           <!-- <h5>Features</h5> -->
           <div id="project_content">
-            <p class="project-description">Medistar Hospital Management system is designed to automate the management of hospital appointments, including appointment scheduling, and other administrative tasks.
+            <p class="project-description">Medistar Hospital Management system is designed to automate the management of
+              hospital appointments, including appointment scheduling, and other administrative tasks.
             </p>
             <p class="project-tech-stack"> <span>HTML | CSS | Javascript | Node.js | Express.js |
                 MongoDB</span></p>
@@ -172,7 +175,8 @@
         <div id="project_descriptions">
           <!-- <h5>Features</h5> -->
           <div id="project_content">
-            <p class="project-description">HealthyMe is a clone of Healthkart.com , it is an Ecommerce website for health and fitness products</p>
+            <p class="project-description">HealthyMe is a clone of Healthkart.com , it is an Ecommerce website for
+              health and fitness products</p>
             <p class="project-tech-stack"><span>HTML | CSS | Javascript | Node.js | Express.js |
                 MongoDB</span></p>
           </div>
@@ -194,7 +198,8 @@
         <div id="project_descriptions">
           <!-- <h5>Features</h5> -->
           <div id="project_content">
-            <p class="project-description">Furniture stock is a clone of Overstock.com , it is an Ecommerce website for furniture and home products
+            <p class="project-description">Furniture stock is a clone of Overstock.com , it is an Ecommerce website for
+              furniture and home products
             </p>
             <p class="project-tech-stack"><span>HTML | CSS | Javascript</span></p>
           </div>
@@ -394,15 +399,15 @@
 
   form.addEventListener('submit', e => {
     e.preventDefault()
-    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
       .then(response => {
         // msg.innerHTML = "Message has been sent successfully Thank you for contacting me.."
         btn2.innerHTML = 'Message sent '
 
-        setTimeout(function(){
+        setTimeout(function () {
           // msg.innerHTML = ""
           btn2.innerHTML = 'Submit';
-        },2500)
+        }, 2500)
         form.reset();
       })
       .catch(error => console.error('Error!', error.message))
